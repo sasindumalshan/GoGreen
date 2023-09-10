@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1940.0" style="-fx-background-color: #DEE9ED;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlantManageController">
+   <children>
+      <ImageView fitHeight="620.0" fitWidth="617.0" layoutX="1492.0" layoutY="237.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/274142516-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="992.0" layoutY="66.0" prefHeight="42.0" prefWidth="338.0" styleClass="round-greed" stylesheets="@css/Dassh.css">
+         <children>
+            <JFXTextField alignment="CENTER" focusColor="#ffffff00" layoutX="1.0" layoutY="1.0" prefHeight="39.0" prefWidth="293.0" styleClass="text-field-search" unFocusColor="#4d4d4d00" />
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="300.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-search-48%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="270.0" fitWidth="347.0" layoutX="1623.0" layoutY="42.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Group%202%203.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="57.0" layoutY="66.0" prefHeight="40.0" prefWidth="117.0" styleClass="grey-home">
+         <graphic>
+            <GridPane prefHeight="30.0" prefWidth="107.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="57.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="27.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="102.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@img/icons8-home-48%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#8e8b8f" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="HOME">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <JFXRadioButton fx:id="RBtnPlant" layoutX="528.0" layoutY="79.0" onAction="#plantOnAction" selected="true" styleClass="Poppins-14" stylesheets="@css/text.css" text="Plant">
+         <toggleGroup>
+            <ToggleGroup fx:id="plant" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rBtnPlantGroup" layoutX="631.0" layoutY="79.0" onAction="#plantGroupAction" styleClass="Poppins-14" stylesheets="@css/text.css" text="Plant Group" toggleGroup="$plant" />
+      <Pane layoutX="56.0" layoutY="365.0" prefHeight="108.0" prefWidth="117.0" styleClass="page-nav-button" stylesheets="@css/Dashboard.css">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="33.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-garden-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="37.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Plant" wrappingWidth="63.9999878384333" />
+         </children>
+      </Pane>
+      <Pane layoutX="57.0" layoutY="136.0" prefHeight="189.0" prefWidth="117.0" styleClass="page-nav-time" stylesheets="@css/Dashboard.css">
+         <children>
+            <Text fx:id="txtHour" fill="#6b6666" layoutX="36.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30;" text="07 " />
+            <Text fx:id="txtDate" fill="#20c997" layoutX="8.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" styleClass="date-text" text="Tue, 8 November" wrappingWidth="105.00000652836752" />
+            <Text fx:id="txtHour1" fill="#5e5b5b" layoutX="35.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30;" text="55" />
+         </children>
+      </Pane>
+      <Pane layoutX="57.0" layoutY="488.0" prefHeight="108.0" prefWidth="117.0" styleClass="page-nav-button" stylesheets="@css/Dashboard.css">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="33.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-spinach-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="37.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Plant" wrappingWidth="63.9999878384333" />
+         </children>
+      </Pane>
+      <Pane layoutX="58.0" layoutY="606.0" prefHeight="108.0" prefWidth="117.0" styleClass="page-nav-button" stylesheets="@css/Dashboard.css">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="33.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-spinach-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="37.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Plant" wrappingWidth="63.9999878384333" />
+         </children>
+      </Pane>
+      <Pane layoutX="56.0" layoutY="722.0" prefHeight="108.0" prefWidth="117.0" styleClass="page-nav-button" stylesheets="@css/Dashboard.css">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="33.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-spinach-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="37.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Plant" wrappingWidth="63.9999878384333" />
+            <Pane layoutX="2.0" layoutY="115.0" prefHeight="108.0" prefWidth="117.0" styleClass="page-nav-button">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="33.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-spinach-30.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#ffffffec" layoutX="37.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Plant" wrappingWidth="63.9999878384333" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1632.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Plant.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="1836.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-leaf-52.png" />
+         </image>
+      </ImageView>
+      <JFXRadioButton fx:id="rBtnPlantGroupMaintenance" layoutX="763.0" layoutY="79.0" onAction="#plantGroupMaintenanceOnAction" styleClass="Poppins-14" stylesheets="@css/text.css" text="Plant Group Maintenance" toggleGroup="$plant" />
+      <Pane layoutX="1794.0" layoutY="744.0" prefHeight="155.0" prefWidth="117.0" style="-fx-background-color: #465265;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-garden-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="12.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Maintance" wrappingWidth="100.00008201599121" />
+         </children>
+         <styleClass>
+            <String fx:value="details-box" />
+            <String fx:value="page-nave" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="1793.0" layoutY="554.0" prefHeight="155.0" prefWidth="117.0" style="-fx-background-color: #465265;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="29.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-growing-plant-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="33.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Group" wrappingWidth="63.9999878384333" />
+         </children>
+         <styleClass>
+            <String fx:value="details-box" />
+            <String fx:value="page-nave" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="1792.0" layoutY="403.0" prefHeight="108.0" prefWidth="117.0" style="-fx-background-color: #465265;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="33.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-spinach-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="37.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Plant" wrappingWidth="63.9999878384333" />
+         </children>
+         <styleClass>
+            <String fx:value="details-box" />
+            <String fx:value="page-nave" />
+         </styleClass>
+      </Pane>
+      <Pane fx:id="pane" layoutX="181.0" layoutY="124.0" prefHeight="825.0" prefWidth="1510.0" />
+   </children>
+   <stylesheets>
+      <URL value="@css/button.css" />
+      <URL value="@css/Scrool.css" />
+      <URL value="@css/Dassh.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ProgressIndicator?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1940.0" style="-fx-background-color: #303A40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlantManageController">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="364.0" layoutX="1573.0" layoutY="285.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/274142516-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="270.0" fitWidth="347.0" layoutX="1623.0" layoutY="42.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Group%202%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="270.0" fitWidth="347.0" layoutX="58.0" layoutY="49.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Group%202%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="969.0" fitWidth="1231.0" layoutX="406.0" layoutY="-416.0" opacity="0.24" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/round%201.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="755.0" layoutY="54.0" prefHeight="42.0" prefWidth="535.0" styleClass="round-greed" stylesheets="@css/Dassh.css">
+         <children>
+            <JFXTextField alignment="CENTER" focusColor="#ffffff00" layoutX="1.0" layoutY="1.0" prefHeight="39.0" prefWidth="487.0" styleClass="text-field-search" unFocusColor="#4d4d4d00" />
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="490.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-search-48%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton layoutX="63.0" layoutY="61.0" prefHeight="40.0" prefWidth="165.0" styleClass="grey-home">
+         <graphic>
+            <GridPane prefHeight="30.0" prefWidth="161.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="71.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="102.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@img/icons8-home-48.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Text>
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="63.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Plant.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="269.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-leaf-52.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="62.0" layoutY="318.0" prefHeight="676.0" prefWidth="1180.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="701.0" prefWidth="1168.0" spacing="5.0" styleClass="vbox">
+               <children>
+                  <Pane prefHeight="60.0" prefWidth="1011.0" styleClass="bar">
+                     <children>
+                        <Text fill="WHITE" layoutX="180.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="No.12 Galle ,IJSE" wrappingWidth="182.0000432729721" />
+                        <Text fill="WHITE" layoutX="372.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Smth@gmail.com" wrappingWidth="182.0000432729721" />
+                        <Text fill="WHITE" layoutX="540.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="+94 239 323 2323" wrappingWidth="182.0000432729721" />
+                        <Text fill="WHITE" layoutX="43.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="P001" wrappingWidth="110.0000432729721" />
+                        <ImageView fitHeight="22.0" fitWidth="31.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/White-leaves.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="383.0" layoutY="-23.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="No.12 Galle ,IJSE" wrappingWidth="182.0000432729721" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="1345.0" layoutY="553.0" prefHeight="87.0" prefWidth="407.0" style="-fx-background-radius: 0 50 50 0;" styleClass="details-box">
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="-7.0" layoutY="-1.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-leaf-67.png" />
+               </image>
+            </ImageView>
+            <Text fill="#04d98b" layoutX="98.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-20" text="Groups" wrappingWidth="208.0000432729721" />
+            <Circle fill="#04d98b" layoutX="360.0" layoutY="44.0" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#04d98b" height="64.0" layoutX="288.0" layoutY="12.0" stroke="TRANSPARENT" strokeType="INSIDE" width="75.0" />
+            <Text fill="WHITE" layoutX="298.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-20" text="20+" wrappingWidth="100.0000432729721" />
+            <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-leaf-60.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text fill="#ffffffb1" layoutX="1569.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="You Can Add New Batge" textAlignment="RIGHT" wrappingWidth="136.583410769701" />
+      <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="1411.0" layoutY="701.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-arrow-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="1495.0" layoutY="698.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-leaf-64%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="1362.0" layoutY="336.0" prefHeight="43.0" prefWidth="165.0" styleClass="plant-add-button">
+         <graphic>
+            <GridPane prefHeight="30.0" prefWidth="140.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.666748046875" minWidth="10.0" prefWidth="52.6666259765625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.6666259765625" minWidth="10.0" prefWidth="71.3333740234375" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/White-leaves.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="details-box" text="NEW" wrappingWidth="52.66691339015961" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <Pane layoutX="1359.0" layoutY="404.0" prefHeight="124.0" prefWidth="356.0" styleClass="details-box">
+         <children>
+            <ProgressIndicator layoutX="30.0" layoutY="7.0" progress="0.78" radius="50.0" />
+            <Text fill="WHITE" layoutX="139.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grow time Group For Maintains" textAlignment="RIGHT" wrappingWidth="143.00005960464478" />
+            <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="156.0" layoutY="49.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-arrow-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#04d98b" layoutX="61.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" styleClass="details-box" text="75%" wrappingWidth="60.00004327297211" />
+            <Text fill="#04d98b" layoutX="147.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-20" text="10+" wrappingWidth="100.0000432729721" />
+            <Circle fill="WHITE" layoutX="318.0" layoutY="47.0" radius="23.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="302.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-flower-67.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="49.0" fitWidth="34.0" layoutX="1572.0" layoutY="343.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-arrow-30.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ffffffb1" layoutX="1555.0" layoutY="699.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Tap the View Full Details" textAlignment="RIGHT" wrappingWidth="107.2500367462635" />
+      <Pane layoutX="1360.0" layoutY="781.0" prefHeight="124.0" prefWidth="356.0" styleClass="details-box">
+         <children>
+            <ProgressIndicator layoutX="30.0" layoutY="7.0" progress="0.78" radius="50.0" />
+            <Text fill="WHITE" layoutX="139.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grow time Group For Maintains" textAlignment="RIGHT" wrappingWidth="143.00005960464478" />
+            <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="156.0" layoutY="49.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-arrow-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#04d98b" layoutX="61.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" styleClass="details-box" text="75%" wrappingWidth="60.00004327297211" />
+            <Text fill="#04d98b" layoutX="147.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-20" text="10+" wrappingWidth="100.0000432729721" />
+            <Circle fill="WHITE" layoutX="318.0" layoutY="47.0" radius="23.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="302.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-flower-67.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="1785.0" layoutY="747.0" prefHeight="155.0" prefWidth="117.0" style="-fx-background-color: #465265;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-garden-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="12.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Maintance" wrappingWidth="100.00008201599121" />
+         </children>
+         <styleClass>
+            <String fx:value="details-box" />
+            <String fx:value="page-nave" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="1784.0" layoutY="557.0" prefHeight="155.0" prefWidth="117.0" style="-fx-background-color: #465265;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="29.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-growing-plant-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="33.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Group" wrappingWidth="63.9999878384333" />
+         </children>
+         <styleClass>
+            <String fx:value="details-box" />
+            <String fx:value="page-nave" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="1783.0" layoutY="406.0" prefHeight="108.0" prefWidth="117.0" style="-fx-background-color: #465265;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="33.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-spinach-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffffffec" layoutX="37.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="details-box" text="Plant" wrappingWidth="63.9999878384333" />
+         </children>
+         <styleClass>
+            <String fx:value="details-box" />
+            <String fx:value="page-nave" />
+         </styleClass>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@css/button.css" />
+      <URL value="@css/Scrool.css" />
+      <URL value="@css/Dassh.css" />
+   </stylesheets>
+</AnchorPane>

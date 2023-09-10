@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="871.0" prefWidth="1735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeController">
+   <children>
+      <Pane layoutX="1355.0" layoutY="651.0" prefHeight="172.0" prefWidth="356.0" styleClass="details-box">
+         <children>
+            <Text fill="WHITE" layoutX="112.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY EMPLOYEE ATTENDANCE" wrappingWidth="182.0000432729721" />
+            <Circle fill="WHITE" layoutX="67.0" layoutY="51.0" radius="23.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="51.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-attendance-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="51.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-10" text="Today Employee Attendace Count You Can See" wrappingWidth="135.00001165817957" />
+            <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="144.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-arrow-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#04d98b" layoutX="228.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-20" text="20+" wrappingWidth="100.0000432729721" />
+         </children>
+      </Pane>
+      <Pane layoutX="1354.0" layoutY="446.0" prefHeight="172.0" prefWidth="356.0" styleClass="details-box">
+         <children>
+            <Text fill="WHITE" layoutX="112.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY EMPLOYEE ATTENDANCE" wrappingWidth="182.0000432729721" />
+            <Circle fill="WHITE" layoutX="67.0" layoutY="51.0" radius="23.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="51.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-attendance-50.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="51.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-10" text="Today Employee Attendace Count You Can See" wrappingWidth="135.00001165817957" />
+            <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="144.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-arrow-30.png" />
+               </image>
+            </ImageView>
+            <Text fill="#04d98b" layoutX="228.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5+" wrappingWidth="100.0000432729721">
+               <styleClass>
+                  <String fx:value="txt-20" />
+                  <String fx:value="details-box" />
+               </styleClass>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="25.0" layoutY="14.0" prefHeight="806.0" prefWidth="1278.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#534d59" layoutX="43.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="\@ID" wrappingWidth="53.50004327297211" />
+            <ScrollPane layoutX="10.0" layoutY="53.0" prefHeight="735.0" prefWidth="1257.0">
+               <content>
+                  <VBox prefHeight="739.0" prefWidth="1247.0" style="-fx-background-color: #ffff;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="1377.0" styleClass="bar">
+                           <children>
+                              <Text fill="#545454" layoutX="34.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="\@C01" wrappingWidth="53.50004327297211" />
+                              <Text fill="#545454" layoutX="137.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Jone Smith" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="385.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="No . 23 Galle" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="632.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Smith@gmail.com" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="857.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="077333535544" wrappingWidth="210.00000172108412" />
+                              <JFXButton layoutX="1085.0" layoutY="14.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" " />
+                              <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="1096.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/icons8-edit-64.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton layoutX="1149.0" layoutY="15.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/icons8-remove-24%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="56.0" prefWidth="1377.0" styleClass="bar">
+                           <children>
+                              <Text fill="#545454" layoutX="34.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="\@C01" wrappingWidth="53.50004327297211" />
+                              <Text fill="#545454" layoutX="137.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Jone Smith" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="385.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="No . 23 Galle" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="632.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Smith@gmail.com" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="857.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="077333535544" wrappingWidth="210.00000172108412" />
+                              <JFXButton layoutX="1085.0" layoutY="14.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" " />
+                              <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="1096.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/icons8-edit-64.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton layoutX="1149.0" layoutY="15.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/icons8-remove-24%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="56.0" prefWidth="1377.0" styleClass="bar">
+                           <children>
+                              <Text fill="#545454" layoutX="34.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="\@C01" wrappingWidth="53.50004327297211" />
+                              <Text fill="#545454" layoutX="137.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Jone Smith" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="385.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="No . 23 Galle" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="632.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Smith@gmail.com" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="857.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="077333535544" wrappingWidth="210.00000172108412" />
+                              <JFXButton layoutX="1085.0" layoutY="14.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" " />
+                              <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="1096.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/icons8-edit-64.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton layoutX="1149.0" layoutY="15.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/icons8-remove-24%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="56.0" prefWidth="1377.0" styleClass="bar">
+                           <children>
+                              <Text fill="#545454" layoutX="34.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="\@C01" wrappingWidth="53.50004327297211" />
+                              <Text fill="#545454" layoutX="137.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Jone Smith" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="385.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="No . 23 Galle" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="632.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Smith@gmail.com" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="857.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="077333535544" wrappingWidth="210.00000172108412" />
+                              <JFXButton layoutX="1085.0" layoutY="14.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/icons8-edit-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <JFXButton layoutX="1149.0" layoutY="15.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/icons8-remove-24%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="56.0" prefWidth="1377.0" styleClass="bar">
+                           <children>
+                              <Text fill="#545454" layoutX="34.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="\@C01" wrappingWidth="53.50004327297211" />
+                              <Text fill="#545454" layoutX="137.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Jone Smith" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="385.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="No . 23 Galle" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="632.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="Smith@gmail.com" wrappingWidth="210.00000172108412" />
+                              <Text fill="#545454" layoutX="857.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins-14" text="077333535544" wrappingWidth="210.00000172108412" />
+                              <JFXButton layoutX="1085.0" layoutY="14.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" " />
+                              <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="1096.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/icons8-edit-64.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton layoutX="1149.0" layoutY="15.0" minWidth="46.0" prefHeight="32.0" prefWidth="46.0" styleClass="round-btn" stylesheets="@css/button.css" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/icons8-remove-24%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Text fill="#534d59" layoutX="149.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="NAME" wrappingWidth="53.50004327297211" />
+            <Text fill="#534d59" layoutX="397.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="ADDRESS" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="648.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="E-MAIL" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="873.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="CONTACT" wrappingWidth="109.5000432729721" />
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@css/Dassh.css" />
+      <URL value="@css/text.css" />
+      <URL value="@css/Scrool.css" />
+   </stylesheets>
+</AnchorPane>
